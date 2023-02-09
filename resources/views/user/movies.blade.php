@@ -14,7 +14,7 @@
     <header class="headernav">
         <a href="/" class="logo">CINERATE&#169;</a>
         <nav class="navbar">
-            <a href="/"><li>HOME</li></a>
+            <a href="/home"><li>HOME</li></a>
             <a href="/movies"><li>MOVIES</li></a>
             <a href="/review"><li>REVIEW</li></a>
             <a href="/login"><li>LOGOUT</li></a>
