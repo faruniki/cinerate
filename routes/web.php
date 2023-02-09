@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/main', function () {
+    return view('main');
+});
+
 //route register
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
 Route::post('/storeRegister', [RegisterController::class, 'storeRegister'])->name('storeRegister');

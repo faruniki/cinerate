@@ -12,8 +12,8 @@
 <body>
     <div class="container">
         <div class="kiri">
-            <p class="back"><a href="/"><i class="fa-solid fa-chevron-left"></i> Back</a></p>
-        <center>
+            <p class="back"><a href="javascript:history.back()"><i class="fa-solid fa-chevron-left"></i> Back</a></p>
+            <center>
             <p class="title-movie">Whiplash (2014)</p>
         </center>
         </div>

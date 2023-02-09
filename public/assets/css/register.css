@@ -22,8 +22,8 @@ body, html {
 
 .container .kiri {
     width: 60%;
-    background-image: url('../img/whiplash.jpg');
-    opacity: 40%;
+    background-image: url('../img/fightclub.jpg');
+    opacity: 60%;
     background-size: cover;
     animation: kiri 2s;
 }
@@ -34,7 +34,7 @@ body, html {
     }
 
     to {
-        opacity: 40%;
+        opacity: 60%;
     }
 }
 
@@ -54,9 +54,10 @@ body, html {
     font-size: 30px;
     font-weight: 700;
     color: #FFF;
-        margin-top: 90px;
+        margin-top: 50px;
         margin-bottom: 50px;
 }
+
 
 .formcoi input {
     color: #FFF;

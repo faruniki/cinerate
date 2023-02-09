@@ -4,52 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CINERATE&#169;</title>
+    <title>CINERATE&#169; | Main</title>
     <link rel="stylesheet" href="assets/css/welcome.css">
     <script src="https://kit.fontawesome.com/96dcb92c2c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<div class="container">
-    <header class="headernav">
-        <a href="/" class="logo">CINERATE&#169;</a>
-        <nav class="navbar">
-            <a href="/"><li>HOME</li></a>
-            <a href="/books"><li>MOVIES</li></a>
-            <a href="/contact"><li>REVIEW</li></a>
-            <a href="/login"><li>LOGIN</li></a>
-        </nav>
-    </header>
-    <div class="garis"></div>
-    <div class="container2">
-        <div class="kiri">
-            <p class="popular">Popular Movies<br>for you to Review.</p>
-            <p class="reviewhere"><a href="/register">— REVIEW HERE</a></p>
+    <div class="kiri">
+        <center>
+            <p class="judulyacoi">Eternals (2021)</p>
+        </center>
+    </div>
+    <div class="kanan">
+        <center>
+            <p class="juduliyah">Man of Steel (2013)</p>
+        </center>
+    </div>
+    <center>
+        <p class="welcome">Welcome to</p>
+        <p class="cinerate">CINERATE&#169;</p>
+        <p class="place">This is an online database of information related to films, television series, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.</p>
             <p class="socials">
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-solid fa-envelope"></i>
             </p>
-        </div>
-        <div class="kanan">
-            <div class="gambar1">
-                <center>
-                    <p class="judulyacoi">Eternals (2021)</p>
-                </center>
-            </div>
-            <div class="gambar2">
-            <center>
-                    <p class="judulyacoi">The Boys (2019)</p>
-                </center>
-            </div>
-            <div class="gambar3">
-            <center>
-                    <p class="judulyacoi">Man of Steel (2013)</p>
-                </center>
-            </div>
-        </div>
-    </div>
-</div>
-
+        <a href="/register"><p class="join">START NOW</p></a>
+    </center>
 </body>
 </html>
