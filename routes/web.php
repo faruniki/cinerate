@@ -19,8 +19,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/main', function () {
-    return view('main');
+Route::get('/home', function () {
+    return view('user.home');
+});
+
+Route::get('/movies', function () {
+    return view('user.movies');
+});
+
+Route::get('/review', function () {
+    return view('user.review');
+});
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
 });
 
 //route register

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINERATE&#169; | Main</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <script src="https://kit.fontawesome.com/96dcb92c2c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,8 +15,8 @@
         <a href="/" class="logo">CINERATE&#169;</a>
         <nav class="navbar">
             <a href="/"><li>HOME</li></a>
-            <a href="/books"><li>MOVIES</li></a>
-            <a href="/contact"><li>REVIEW</li></a>
+            <a href="/movies"><li>MOVIES</li></a>
+            <a href="/review"><li>REVIEW</li></a>
             <a href="/login"><li>LOGOUT</li></a>
         </nav>
     </header>
