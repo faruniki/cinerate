@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,19 @@ Route::get('/review', function () {
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
+
+Route::get('/comment', function () {
+    return view('admin.comment');
+});
+
+
+//route user
+Route::get('/users', [AdminController::class, 'user'])->name('user');
+Route::get('/editUser/{id}', [AdminController::class, 'editUser'])->name('editUser');
+Route::post('/updateUser/{id}', [AdminController::class, 'updateUser'])->name('updateUser');
+Route::post('/deleteUser/{id}', [AdminController::class, 'deleteUser'])->name('deleteUser');
+
+
 
 //route register
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
