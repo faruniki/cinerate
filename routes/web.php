@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,15 @@ Route::get('/dashboard', function () {
 Route::get('/comment', function () {
     return view('admin.comment');
 });
+
+
+//route movies
+Route::get('admin/movies', [MovieController::class, 'index'])->name('adminMovies');
+Route::get('admin/createMovie', [MovieController::class, 'createMovie'])->name('createMovie');
+Route::post('admin/storemovie', [MovieController::class, 'storeMovie'])->name('storeMovie');
+Route::get('admin/editMovie/{id}', [MovieController::class, 'editMovie'])->name('editMovie');
+Route::post('admin/updateMovie/{id}', [MovieController::class, 'updateMovie'])->name('updateMovie');
+Route::post('admin/deleteMovie/{id}', [MovieController::class, 'deleteMovie'])->name('deleteMovie');
 
 
 //route user

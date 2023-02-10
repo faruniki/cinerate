@@ -14,7 +14,8 @@ class MovieController extends Controller
      */
     public function index()
     {
-        //
+        $movie = Movie::get();
+        return view('admin.movies', compact('movie'));
     }
 
     /**
@@ -22,9 +23,9 @@ class MovieController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createMovie()
     {
-        //
+        return view('admin.create-movie');
     }
 
     /**
@@ -33,9 +34,28 @@ class MovieController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function storeMovie(Request $request)
     {
-        //
+        $request->validate([
+            'judul' => 'required',
+            'tahun' => 'required',
+            'genre' => 'required',
+            'sutradara' => 'required',
+            'pemain' => 'required',
+            'sinopsis' => 'required',
+            'cover' => 'required',
+        ]);
+
+        Movie::create([
+            'judul' => $request->judul,
+            'tahun' => $request->tahun,
+            'genre' => $request->genre,
+            'sutradara' => $request->sutradara,
+            'pemain' => $request->pemain,
+            'sinopsis' => $request->sinopsis,
+            'cover' => $request->cover,
+        ]);
+        return redirect(route('adminMovies'));
     }
 
     /**
@@ -55,9 +75,10 @@ class MovieController extends Controller
      * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function edit(Movie $movie)
+    public function editMovie(Movie $movie, $id)
     {
-        //
+        $movie = Movie::where('id', $id)->first();
+        return view('admin.edit-movie', compact('movie'));
     }
 
     /**
@@ -67,9 +88,22 @@ class MovieController extends Controller
      * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Movie $movie)
+    public function updateMovie(Request $request, $id)
     {
-        //
+        $request->validate([
+            'judul' => 'required',
+            'tahun' => 'required',
+            'genre' => 'required',
+            'sutradara' => 'required',
+            'pemain' => 'required',
+            'sinopsis' => 'required',
+            'cover' => 'required',
+        ]);
+
+        $movie = Movie::where('id', $id)->first();
+
+        $movie->update($request->all());
+        return redirect(route('adminMovies'));
     }
 
     /**
@@ -78,8 +112,9 @@ class MovieController extends Controller
      * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Movie $movie)
+    public function deleteMovie(Movie $movie, $id)
     {
-        //
+        Movie::where('id', $id)->delete();
+        return redirect(route('adminMovies'));
     }
 }

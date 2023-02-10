@@ -18,11 +18,10 @@ return new class extends Migration
             $table->string('judul');
             $table->string('tahun');
             $table->string('pemain');
-            $table->string('');
-            $table->string('judul');
-            $table->string('judul');
-            $table->string('judul');
-            $table->string('judul');
+            $table->string('genre');
+            $table->string('sutradara');
+            $table->string('sinopsis');
+            $table->string('cover');
             $table->timestamps();
         });
     }
