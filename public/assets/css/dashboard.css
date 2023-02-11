@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.containernya {
+    margin: 5% 10%;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kiri {
+    width: 30%;
+    height: 100%;
+    background-color: #222;
+    border-radius: 4px;
+    border-right: solid 5px #ff9900 ;
+}
+
+.tengah {
+    width: 30%;
+    height: 100%;
+    background-color: #222;
+    border-radius: 4px;
+    border-right: solid 5px #ff9900 ;
+}
+
+.kanan {
+    width: 30%;
+    height: 100%;
+    background-color: #222;
+    border-radius: 4px;
+    border-right: solid 5px #ff9900 ;
+}
+
+.containernya div p {
+    text-align: right;
+    margin-right: 25px;
+}
+
+.juduldash {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.totaldash {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: -15px;
+}
