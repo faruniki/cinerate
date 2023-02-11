@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINERATE&#169; | Review</title>
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/review.css">
     <script src="https://kit.fontawesome.com/96dcb92c2c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,34 +22,23 @@
     </header>
     <div class="garis"></div>
     <div class="container2">
-        <div class="kiri">
-            <p class="popular">Popular Movies<br>for you to Review.</p>
-            <p class="reviewhere"><a href="/review">— REVIEW HERE</a></p>
-            <p class="socials">
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-solid fa-envelope"></i>
-            </p>
-        </div>
-        <div class="kanan">
-            <div class="gambar1">
-                <center>
-                    <p class="judulyacoi">Eternals (2021)</p>
-                </center>
-            </div>
-            <div class="gambar2">
+        <div class="comment">
             <center>
-                    <p class="judulyacoi">The Boys (2019)</p>
-                </center>
-            </div>
-            <div class="gambar3">
-            <center>
-                    <p class="judulyacoi">Man of Steel (2013)</p>
-                </center>
-            </div>
+                <form action="">
+                    <p class="judulmessages">Review</p>
+                    <p class="deskmessages">Just be honest here.</p>
+                    <textarea class="textmovie" placeholder="What Movie   "></textarea>
+                    <textarea class="textcoi" placeholder="In the Scale 1-10, How's Yours"></textarea>
+                    <br>
+                    <textarea class="textrate" placeholder="Your Opinion"></textarea>
+
+                    <br>
+                    <button name="" id="" value="Submit" class="submitcoi">SUBMIT</button>
+                </form>
+
+            </center>
         </div>
     </div>
-</div>
 
 </body>
 </html>
