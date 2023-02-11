@@ -72,7 +72,7 @@ body {
 .garis {
     width: 100%;
     height: 1px;
-    background-color: #ffffff17;
+    background-color: #656565;
     margin-top: -9px;
 }
 
@@ -103,7 +103,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     padding-top: 70px;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
 
 }
 

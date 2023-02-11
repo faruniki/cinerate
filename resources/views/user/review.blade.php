@@ -27,8 +27,8 @@
                 <form action="">
                     <p class="judulmessages">Review</p>
                     <p class="deskmessages">Just be honest here.</p>
-                    <textarea class="textmovie" placeholder="What Movie   "></textarea>
-                    <textarea class="textcoi" placeholder="In the Scale 1-10, How's Yours"></textarea>
+                    <textarea class="textmovie" placeholder="What Movie?"></textarea>
+                    <textarea class="textcoi" placeholder="Who's the Director?"></textarea>
                     <br>
                     <textarea class="textrate" placeholder="Your Opinion"></textarea>
 
@@ -39,7 +39,7 @@
             </center>
         </div>
     </div>
-    <p class="people">Poeple's Review : </p>
+    <p class="people">People's Review : </p>
     <div class="container1">
         <div class="atasgua">
             <div class="dari">
@@ -48,7 +48,7 @@
             </div>
             <div class="filmnyah">
                 <p class="judulfilm">Title : The Batman (2022)</p>
-                <p class="nilaifilm">Rating : 9.5</p>
+                <p class="nilaifilm">Director : Matt Reeves</p>
             </div>
         </div>
         <div class="opini">

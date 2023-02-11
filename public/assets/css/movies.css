@@ -77,7 +77,8 @@ body {
 
 .container2 {
     height: 530px;
-    width: 100%;
+    margin: 0px 3%;
+    width: 94%;
     display: flex;
     justify-content: space-between;
 }
