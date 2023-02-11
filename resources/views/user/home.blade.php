@@ -51,5 +51,52 @@
     </div>
 </div>
 
+<footer>
+        <div class="footercoi">
+            <div class="footlogo">
+                <div class="ea">
+                    <div class="anak-ea">
+                        <p class="wikbooksfoot">CINERATE&#169;</p>
+                        <p class="wikbooksfoot2">Give us your opinion<br> to help peoples.</p>
+                    </div>
+                    <div class="anak2-ea">
+                        
+                    </div>
+                </div>
+                <div class="eaa">
+                    <p class="judul2-ea">Thank You</p>
+                        <p class="desk2-ea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum iste doloribus architecto placeat facilis error debitis aut molestiae quam, id, quod, voluptates dolorum dicta corporis fugiat nostrum beatae officia.</p>
+
+                </div>
+            </div>
+            <div class="foot1">
+                <ul>
+                    <p class="special-1"><b>Popular Movies</b></p>
+                    <li><a href="/books">Eternals (2021)</a></li>
+                    <li><a href="/books">The Boys (2019)</a></li>
+                    <li><a href="/books">Man of Steel (2013)</a></li>
+                    <li><a href="/books">Fight Club (1999)</a></li>
+                    <li><a href="/books">Whiplash (2014)</a></li>
+                </ul>
+            </div>
+            <div class="foot2">
+                <ul>
+                    <p class="special-2"><b>Pages</b></p>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/movies">Movies</a></li>
+                    <li><a href="/review">Review</a></li>
+                </ul>
+            </div>
+            <div class="foot3">
+                <ul>
+                    <p class="special-3"><b>Pages</b></p>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/login">Logout</a></li>
+                    <li><a href="/loginadmin">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
