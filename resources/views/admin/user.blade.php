@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="assets/css/user.css">
 
     <table class="table">
-        <thead>
-            <tr class="table-dark">
+        <thead class="theadcoi">
+            <tr>
                 <th>No</th>
                 <th>Name</th>
                 <th>Email</th>
@@ -24,8 +24,8 @@
                 <td>
                     <form action="{{route('deleteUser', $users->id)}}" method="post">
                         @csrf
-                        <a href="{{route('editUser', $users->id)}}" class="btn btn-primary">Edit</a>
-                        <button class="btn btn-danger">Delete</button>
+                        <a href="{{route('editUser', $users->id)}}" class="edit-btn">Edit</a>
+                        <button class="delete-btn">Delete</button>
                     </form>
                 </td>
             </tr>

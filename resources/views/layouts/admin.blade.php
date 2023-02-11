@@ -13,10 +13,10 @@
     <div class="container">
         <header class="headernav">
             <nav class="navbar">
-                <a href="/home"><li>DASHBOARD</li></a>
-                <a href="/movies"><li>USERS</li></a>
-                <a href="/review"><li>FILMS</li></a>
-                <a href="/login"><li>REVIEWS</li></a>
+                <a href="/dashboard"><li>DASHBOARD</li></a>
+                <a href="/users"><li>USERS</li></a>
+                <a href="/admin/movies"><li>MOVIES</li></a>
+                <a href="/reviews"><li>REVIEWS</li></a>
             </nav>
         </header>
         <div class="garis"></div>
