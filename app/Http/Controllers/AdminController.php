@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Review;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -36,5 +37,15 @@ class AdminController extends Controller
     {
         User::where('id', $id)->delete();
         return redirect(route('user'));
+    }
+
+    public function review(){
+        $review = Review::get();
+        return view('admin.review', compact('review'));
+    }
+
+    public function deleteReview(Request $request, $id){
+        Review::where('id', $id)->delete();
+        return redirect(route('adminReview'));
     }
 }

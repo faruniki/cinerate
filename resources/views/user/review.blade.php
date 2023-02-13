@@ -24,38 +24,41 @@
     <div class="container2">
         <div class="comment">
             <center>
-                <form action="">
+                <form action="{{route('postReview')}}" method="post">
+                    @csrf
                     <p class="judulmessages">Review</p>
                     <p class="deskmessages">Just be honest here.</p>
-                    <textarea class="textmovie" placeholder="What Movie?"></textarea>
-                    <textarea class="textcoi" placeholder="Who's the Director?"></textarea>
+                    <textarea class="textmovie" name="movie_name" placeholder="What Movie?"></textarea>
+                    <textarea class="textcoi" name="tahun" placeholder="What Year?  "></textarea>
                     <br>
-                    <textarea class="textrate" placeholder="Your Opinion"></textarea>
+                    <textarea class="textrate" name="review" placeholder="Your Opinion"></textarea>
 
                     <br>
-                    <button name="" id="" value="Submit" class="submitcoi">SUBMIT</button>
+                    <button type="submit" value="Submit" class="submitcoi">SUBMIT</button>
                 </form>
 
             </center>
         </div>
     </div>
     <p class="people">People's Review : </p>
+    @foreach($review as $reviews)
     <div class="container1">
         <div class="atasgua">
             <div class="dari">
-                <p class="daripengirim">Sami Askar</p>
-                <p class="kapan">7 October 2022</p>
+                <p class="daripengirim">{{Auth::User()->name}}</p>
+                <p class="kapan">{{$reviews->created_at}}</p>
             </div>
             <div class="filmnyah">
-                <p class="judulfilm">Title : The Batman (2022)</p>
-                <p class="nilaifilm">Director : Matt Reeves</p>
+                <p class="judulfilm">Title : {{$reviews->movie_name}}</p>
+                <p class="nilaifilm">Year : {{$reviews->tahun}}</p>
             </div>
         </div>
         <div class="opini">
             <p class="pesan">Opinion :</p>
-            <p class="opininyah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi qui illum, deserunt libero similique, atque non itaque dolores nihil laborum cum aut, in assumenda quaerat cupiditate. Inventore veniam aperiam nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deserunt iusto deleniti! Molestias maxime dolores ab rem porro excepturi amet recusandae molestiae, quos veniam, provident nostrum, nulla asperiores enim officiis.</p>
+            <p class="opininyah">{{$reviews->review}}</p>
         </div>
     </div>
+    @endforeach
 </div>
 
     <footer>

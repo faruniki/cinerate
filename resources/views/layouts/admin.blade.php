@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINERATE&#169; | @yield('title')</title>
-    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href={{asset("assets/css/admin.css")}}>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
                 <a href="/dashboard"><li>DASHBOARD</li></a>
                 <a href="/users"><li>USERS</li></a>
                 <a href="/admin/movies"><li>MOVIES</li></a>
-                <a href="/reviews"><li>REVIEWS</li></a>
+                <a href="{{route('adminReview')}}"><li>REVIEWS</li></a>
             </nav>
         </header>
         <div class="garis"></div>

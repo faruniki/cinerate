@@ -19,7 +19,7 @@
                     <form action="{{route('storeRegister')}}" class="formcoi" method="post">
                         @csrf
                         <label for="username">Your Username</label><br>
-                        <input type="text" name="name" placeholder="Username"><br><br>
+                        <input type="text" name="name" placeholder="Username" autofocus><br><br>
                         <label for="email">Your Email</label><br>
                         <input type="email" name="email" placeholder="Email Address"><br><br>
                         <label for="password">Your Password</label><br>

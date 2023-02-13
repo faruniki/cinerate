@@ -23,7 +23,7 @@
                     <form action="{{route('storeLogin')}}" class="formcoi" method="post">
                         @csrf
                         <label for="email">Your Email</label><br>
-                        <input type="email" name="email" placeholder="Email Address"><br><br>
+                        <input type="email" name="email" placeholder="Email Address" autofocus><br><br>
                         <label for="password">Your Password</label><br>
                         <input type="password" name="password" placeholder="Password"><br>
                         <button type="submit">LOGIN</button>

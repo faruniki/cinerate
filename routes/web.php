@@ -5,6 +5,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\ReviewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,18 +30,16 @@ Route::get('/movies', function () {
     return view('user.movies');
 });
 
-Route::get('/review', function () {
-    return view('user.review');
-});
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
 
-Route::get('/comment', function () {
-    return view('admin.comment');
-});
 
+
+//route admin
+Route::get('admin/review', [AdminController::class, 'review'])->name('adminReview');
+Route::post('admin/deleteReview/{id}', [AdminController::class, 'deleteReview'])->name('deleteReview');
 
 //route movies
 Route::get('admin/movies', [MovieController::class, 'index'])->name('adminMovies');
@@ -50,6 +49,9 @@ Route::get('admin/editMovie/{id}', [MovieController::class, 'editMovie'])->name(
 Route::post('admin/updateMovie/{id}', [MovieController::class, 'updateMovie'])->name('updateMovie');
 Route::post('admin/deleteMovie/{id}', [MovieController::class, 'deleteMovie'])->name('deleteMovie');
 
+//route review
+Route::get('/review', [ReviewController::class, 'index'])->name('review');
+Route::post('/postReview', [ReviewController::class, 'createReview'])->name('postReview');
 
 //route user
 Route::get('/users', [AdminController::class, 'user'])->name('user');

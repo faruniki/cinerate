@@ -3,6 +3,8 @@
 @section('title', 'Movies')
 @section('content')
 
+<link rel="stylesheet" href={{asset("assets/css/user.css")}}>
+
 <div >
     <form action="{{route('createMovie')}}">
         <button type="submit" class="btn btn-success">Add+</button>
