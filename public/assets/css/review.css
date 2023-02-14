@@ -140,7 +140,6 @@ input, .textmovie, textarea{
     height: 22px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-
 }
 
 input, .textrate {
@@ -153,7 +152,17 @@ input, .textrate {
     height: 42px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-        padding-top: 25px;
+        padding-top: 10px;
+}
+
+.textcoi {
+    width: 265px;
+    height: 22px;
+}
+
+.textname {
+    position: absolute;
+    margin-top: -600px;
 }
 
 .submitcoi {

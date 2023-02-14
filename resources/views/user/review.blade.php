@@ -28,8 +28,9 @@
                     @csrf
                     <p class="judulmessages">Review</p>
                     <p class="deskmessages">Just be honest here.</p>
-                    <textarea class="textmovie" name="movie_name" placeholder="What Movie?"></textarea>
-                    <textarea class="textcoi" name="tahun" placeholder="What Year?  "></textarea>
+                    <textarea type="text" name="user_name" class="textname" placeholder="nama" id="">{{Auth::User()->name}}</textarea><br>
+                    <input class="textmovie" name="movie_name" placeholder="What Movie?">
+                    <input class="textcoi" name="tahun" placeholder="What Year?  ">
                     <br>
                     <textarea class="textrate" name="review" placeholder="Your Opinion"></textarea>
 
@@ -45,7 +46,7 @@
     <div class="container1">
         <div class="atasgua">
             <div class="dari">
-                <p class="daripengirim">{{Auth::User()->name}}</p>
+                <p class="daripengirim">{{$reviews->user_name}}</p>
                 <p class="kapan">{{$reviews->created_at}}</p>
             </div>
             <div class="filmnyah">

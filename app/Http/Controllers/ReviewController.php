@@ -26,6 +26,7 @@ class ReviewController extends Controller
     public function createReview(Request $request)
     {
         $request->validate([
+            'user_name' => 'required',
             'movie_name' => 'required',
             'review' => 'required',
             'tahun' => 'required',
