@@ -20,7 +20,7 @@ body {
         font-size: 14px;
     }
 
-    input {
+    .inputyah {
         margin: 0px 2px;
         margin-top: 10px;
         color: #ffffff;
@@ -71,33 +71,16 @@ body {
         height: 145px;
     }
 
-    .custom-file-input::-webkit-file-upload-button {
-      visibility: hidden;
+    .file-input {
+      color: #FFF;
+      background-color: #2c2a2900;
     }
 
-    .custom-file-input::before {
-      content: 'Select some files';
-      display: inline-block;
-      background: linear-gradient(top, #f9f9f9, #e3e3e3);
-      border: 1px solid #999;
-      border-radius: 3px;
-      padding: 5px 8px;
-      outline: none;
-      white-space: nowrap;
-      -webkit-user-select: none;
-      cursor: pointer;
-      text-shadow: 1px 1px #fff;
-      font-weight: 600;
-      font-size: 10pt;
+    form {
+      margin-top: 20px;
     }
+    
 
-    .custom-file-input:hover::before {
-      border-color: black;
-    }
-
-    .custom-file-input:active::before {
-      background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
-    }
 </style>
 </head>
 <body>
@@ -107,19 +90,19 @@ body {
     @csrf
     <br>
     <label for="judul">Name</label><br>
-    <input type="text" id="judul" name="judul" autofocus required ><br><br><br>
+    <input class="inputyah" type="text" id="judul" name="judul" autofocus required ><br><br><br>
     <label for="sutradara">Director</label><br>
-    <input type="text" id="sutradara" name="sutradara" required><br><br><br>
+    <input class="inputyah" type="text" id="sutradara" name="sutradara" required><br><br><br>
     <label for="genre">Genre</label><br>
-    <input type="text" id="genre" name="genre" required><br><br><br>
+    <input class="inputyah" type="text" id="genre" name="genre" required><br><br><br>
     <label for="pemain">Main Actor</label><br>
-    <input type="text" id="pemain" name="pemain" required><br><br><br>
+    <input class="inputyah" type="text" id="pemain" name="pemain" required><br><br><br>
     <label for="tahun">Release Year</label><br>
-    <input type="text" id="tahun" name="tahun" required><br><br><br>
+    <input class="inputyah" type="text" id="tahun" name="tahun" required><br><br><br>
     <label for="sinopsis">Synopsis</label><br><br>
     <textarea id="sinopsis" name="sinopsis" required></textarea><br><br><br>
     <label for="cover">Choose Cover</label><br><br>
-    <input type="file" class="custom-file-input" id="cover" name="cover" required><br><br>
+    <input type="file" class="file-input inputyah" id="cover" name="cover" required><br><br>
     <input type="submit" class="joko" value="SUBMIT">
   </form>
 </center>

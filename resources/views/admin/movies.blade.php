@@ -34,8 +34,8 @@
                 <td>
                     <form action="{{route('deleteMovie', $movies->id)}}" method="post">
                         @csrf
-                        <a href="{{route('editMovie', $movies->id)}}" class="btn btn-primary">Edit</a>
-                        <button class="btn btn-danger">Delete</button>
+                        <a href="{{route('editMovie', $movies->id)}}" class="edit-btn">Edit</a>
+                        <button class="delete-btn">Delete</button>
                     </form>
                 </td>
             </tr>
