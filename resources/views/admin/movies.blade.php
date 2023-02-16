@@ -6,9 +6,12 @@
 <link rel="stylesheet" href={{asset("assets/css/user.css")}}>
 
 <div >
-    <form action="{{route('createMovie')}}">
-        <button type="submit" class="btn btn-success">Add+</button>
-    </form>
+    <center>
+        <form action="{{route('createMovie')}}">
+            <button type="submit" class="add-btn">Add+</button>
+        </form>  
+    </center>
+
     <table class="table mt-2">
         <thead>
             <tr class="table-dark">

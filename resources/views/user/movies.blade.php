@@ -21,35 +21,26 @@
         </nav>
     </header>
     <div class="garis"></div>
+    <center>
+        <p class="judulpopular">Movies Recommendations</p>
+    </center>
+    @foreach($review as $reviews)
     <div class="container2">
-        <div class="kanan">
-            <div class="gambar1">
-                <center>
-                    <p class="judulyacoi">Eternals (2021)</p>
-                </center>
+        <div class="kiri">
+            <div class="gambarmovie">
+
             </div>
-            <div class="gambar2">
-            <center>
-                    <p class="judulyacoi">The Boys (2019)</p>
-                </center>
-            </div>
-            <div class="gambar3">
-            <center>
-                    <p class="judulyacoi">Man of Steel (2013)</p>
-                </center>
-            </div>
-            <div class="gambar4">
-            <center>
-                    <p class="judulyacoi">Captain America: First Avenger (2011)</p>
-                </center>
-            </div>
-            <div class="gambar5">
-            <center>
-                    <p class="judulyacoi">The Lighthouse (2019)</p>
-                </center>
+            <div class="deskmovie">
+                <p class="judulmovie">Project Almanac</p>
+                <p class="tahunmovie">2015</p>
+                <p class="director ya"><b>Director</b>:<br>Dean Israelit</p>
+                <p class="genre ya"><b>Genre</b>:<br>Sci-fi/Thriller</p>
+                <p class="actor ya"><b>Actor</b>:<br>Jonny Weston</p>
+                <p class="sinopsis ya"><b>Synopsis:</b><br>David Raskin and his friends discover his dead father's time machine's design. They get the machine started, but their joy turns to horror when they find out the results of their immature actions.</p>
             </div>
         </div>
     </div>
+    @endforeach
 </div>
 
 <footer>
@@ -65,7 +56,7 @@
                     </div>
                 </div>
                 <div class="eaa">
-                    <p class="judul2-ea">Thank You</p>
+                    <p class="judul2-ea">About Us</p>
                         <p class="desk2-ea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum iste doloribus architecto placeat facilis error debitis aut molestiae quam, id, quod, voluptates dolorum dicta corporis fugiat nostrum beatae officia.</p>
 
                 </div>

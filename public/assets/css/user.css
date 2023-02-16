@@ -55,4 +55,19 @@ tbody tr td{
     background-color: #FFF;
     font-weight: 600;
 }
-    
+ 
+.add-btn {
+    background-color: #00000000;
+    border-radius: 100px;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border: solid 1px #FFF;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.add-btn:hover {
+    background-color: #FFF;
+    color: #000;
+}

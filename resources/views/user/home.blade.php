@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="eaa">
-                    <p class="judul2-ea">Thank You</p>
+                    <p class="judul2-ea">About Us</p>
                         <p class="desk2-ea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum iste doloribus architecto placeat facilis error debitis aut molestiae quam, id, quod, voluptates dolorum dicta corporis fugiat nostrum beatae officia.</p>
 
                 </div>

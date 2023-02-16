@@ -108,81 +108,6 @@ body {
     }
 }
 
-.container2 .kanan {
-    width: 100%;
-    margin-top: 40px;
-}
-
-.kanan {
-    justify-content: space-around;
-    display: flex;
-}
-
-
-@keyframes kanan {
-    from {
-        opacity: 30%;
-    }
-
-    to {
-        opacity: 70%;
-    }
-}
-
-.kanan div {
-    height: 500px;
-    width: 230px;
-    border-radius: 4px;
-}
-
-.kanan .gambar1 {
-    background-image: url('../img/eternals.jpg');
-    background-size: cover;
-    opacity: 70%;
-    animation: kanan 2s;
-}
-
-.kanan .gambar2  {
-    background-image: url('../img/theboys.jpg');
-    background-size: cover;
-    opacity: 70%;
-    animation: kanan 2s;
-}
-
-.kanan .gambar3 {
-    background-image: url('../img/superman.jpg');
-    background-size: cover;
-    opacity: 70%;
-    animation: kanan 2s;
-}
-
-.kanan .gambar4 {
-    background-image: url('../img/captain.jpg');
-    background-size: cover;
-    opacity: 70%;
-    animation: kanan 2s;
-}
-
-.kanan .gambar5 {
-    background-image: url('../img/lighthouse.png');
-    background-size: cover;
-    opacity: 70%;
-    animation: kanan 2s;
-}
-
-.kanan div:hover {
-    opacity: 100%;
-}
-
-
-.reviewhere {
-    font-size: 12px;
-    font-weight: 500;
-    color: #daa300;
-    margin-left: 100px;
-    animation: mantap 2s;
-}
-
 @keyframes mantap {
     from {
         opacity: 0.1;
@@ -193,42 +118,94 @@ body {
     }
 }
 
-.reviewhere a {
-    text-decoration: none;
-    color: #daa300;
-}
-
-.reviewhere a:hover {
-    color: #ffbf00;
-}
-
-
-.socials {
-    color: #c3c3c3;
-    font-size: 14px;
-    word-spacing: 20px;
-    margin-left: 100px;
-    margin-top: 200px;
+.judulpopular {
+    margin-top: 30px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 600;
     animation: mantap 2s;
 }
 
-.socials i:hover {
+.container2 {
+    width: 80%;
+    height: 350px;
+    margin: 40px 10% 20px 10%;
+    animation: mantap 2s;
+}
+
+.container2 div {
+    height: 100%;
+
+}
+
+.container2 .kiri {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 .kiri div {
+    height: 100%;
+}
+
+.gambarmovie {
+    width: 15%;
+    background-image: url('../img/almanac.jpg');
+    background-size: cover;
+}
+
+.deskmovie {
+    width: 75%;
+
+}
+
+.deskmovie p {
+    margin: 0px 0px 0px 15px;
     color: #FFF;
 }
 
-.judulyacoi {
-    color: #ffffff73;
-    font-size: 12px;
-    display: block;
-    max-width: fit-content; 
-        margin-top: 470px;
+.deskmovie .judulmovie {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 24px;
 }
 
-.judulyacoi:hover {
-    color: #ffffffdc;
-    display: block;
-    max-width: fit-content;
+.deskmovie .tahunmovie {
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
 }
+
+.deskmovie .director {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFF;
+    margin: 15px 0px 0px 15px;
+}
+
+.deskmovie .genre {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFF;
+    margin: 15px 0px 0px 15px;
+}
+
+.deskmovie .actor {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFF;
+    margin: 15px 0px 0px 15px;
+}
+
+.deskmovie .sinopsis {
+    font-size: 14px;
+    font-weight:400;
+    color: #FFF;
+    margin: 15px 0px 0px 15px;
+}
+
+
+
 
 .footercoi {
     display: flex;
