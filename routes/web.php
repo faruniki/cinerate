@@ -26,10 +26,6 @@ Route::get('/home', function () {
     return view('user.home');
 });
 
-Route::get('/movies', function () {
-    return view('user.movies');
-});
-
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -42,6 +38,8 @@ Route::get('admin/review', [AdminController::class, 'review'])->name('adminRevie
 Route::post('admin/deleteReview/{id}', [AdminController::class, 'deleteReview'])->name('deleteReview');
 
 //route movies
+Route::get('/movies',[MovieController::class, 'movie'])->name('movies');
+
 Route::get('admin/movies', [MovieController::class, 'index'])->name('adminMovies');
 Route::get('admin/createMovie', [MovieController::class, 'createMovie'])->name('createMovie');
 Route::post('admin/storemovie', [MovieController::class, 'storeMovie'])->name('storeMovie');
@@ -68,3 +66,6 @@ Route::post('/storeRegister', [RegisterController::class, 'storeRegister'])->nam
 //route login
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/storeLogin', [LoginController::class, 'storeLogin'])->name('storeLogin');
+
+//route logout
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');

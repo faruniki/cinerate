@@ -102,8 +102,7 @@
                 <ul>
                     <p class="special-3"><b>Action</b></p>
                     <li><a href="/home">Home</a></li>
-                    <li><a href="/login">Logout</a></li>
-                    <li><a href="/loginadmin">Admin</a></li>
+                    <li><a href="{{route('logout')}}">Logout</a></li>
                 </ul>
             </div>
         </div>

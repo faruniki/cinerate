@@ -15,7 +15,7 @@
         <a href="/" class="logo">CINERATE&#169;</a>
         <nav class="navbar">
             <a href="/home"><li>HOME</li></a>
-            <a href="/movies"><li>MOVIES</li></a>
+            <a href="{{route('movies')}}"><li>MOVIES</li></a>
             <a href="/review"><li>REVIEW</li></a>
             <a href="/login"><li>LOGOUT</li></a>
         </nav>
@@ -91,8 +91,7 @@
                 <ul>
                     <p class="special-3"><b>Action</b></p>
                     <li><a href="/home">Home</a></li>
-                    <li><a href="/login">Logout</a></li>
-                    <li><a href="/loginadmin">Admin</a></li>
+                    <li><a href="{{route('logout')}}">Logout</a></li>
                 </ul>
             </div>
         </div>

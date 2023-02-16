@@ -12,7 +12,7 @@
         </form>  
     </center>
 
-    <table class="table mt-2">
+    <table class="table">
         <thead>
             <tr class="table-dark">
                 <th>No</th>
@@ -29,7 +29,7 @@
         <tbody>
             <tr>
                 <td>{{$i++}}</td>
-                <td><img src="{{asset("assets/images/". $movies->cover)}}" style="height:100px; width:90px; object-fit: cover;"></td>
+                <td><img src="{{asset('assets/img/'. $movies->cover)}}" style="height:100px; width:90px; object-fit: cover;"></td>
                 <td>{{$movies->judul}}</td>
                 <td>{{$movies->sutradara}}</td>
                 <td>{{$movies->genre}}</td>

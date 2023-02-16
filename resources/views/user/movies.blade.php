@@ -21,25 +21,28 @@
         </nav>
     </header>
     <div class="garis"></div>
+    <br>
     <center>
         <p class="judulpopular">Movies Recommendations</p>
     </center>
-    @foreach($review as $reviews)
+    <br>
+    @foreach($movie as $movies)
     <div class="container2">
         <div class="kiri">
             <div class="gambarmovie">
-
+                <img src="assets/img/{{$movies->cover}}" class="coverfilm" alt="">
             </div>
             <div class="deskmovie">
-                <p class="judulmovie">Project Almanac</p>
-                <p class="tahunmovie">2015</p>
-                <p class="director ya"><b>Director</b>:<br>Dean Israelit</p>
-                <p class="genre ya"><b>Genre</b>:<br>Sci-fi/Thriller</p>
-                <p class="actor ya"><b>Actor</b>:<br>Jonny Weston</p>
-                <p class="sinopsis ya"><b>Synopsis:</b><br>David Raskin and his friends discover his dead father's time machine's design. They get the machine started, but their joy turns to horror when they find out the results of their immature actions.</p>
+                <p class="judulmovie">{{$movies->judul}}</p>
+                <p class="tahunmovie">{{$movies->tahun}}</p>
+                <p class="director ya"><b>Director</b>:<br>{{$movies->sutradara}}</p>
+                <p class="genre ya"><b>Genre</b>:<br>{{$movies->genre}}</p>
+                <p class="actor ya"><b>Actor</b>:<br>{{$movies->pemain}}</p>
+                <p class="sinopsis ya"><b>Synopsis:</b><br>{{$movies->sinopsis}}</p>
             </div>
         </div>
     </div>
+    <br>
     @endforeach
 </div>
 
@@ -83,8 +86,7 @@
                 <ul>
                     <p class="special-3"><b>Action</b></p>
                     <li><a href="/home">Home</a></li>
-                    <li><a href="/login">Logout</a></li>
-                    <li><a href="/loginadmin">Admin</a></li>
+                    <li><a href="{{route('logout')}}">Logout</a></li>
                 </ul>
             </div>
         </div>

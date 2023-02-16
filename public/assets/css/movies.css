@@ -150,7 +150,7 @@ body {
 
 .gambarmovie {
     width: 15%;
-    background-image: url('../img/almanac.jpg');
+
     background-size: cover;
 }
 
@@ -165,7 +165,7 @@ body {
 }
 
 .deskmovie .judulmovie {
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 600;
     font-size: 24px;
 }
@@ -180,7 +180,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: #FFF;
-    margin: 15px 0px 0px 15px;
+    margin: 25px 0px 0px 15px;
 }
 
 .deskmovie .genre {
@@ -306,4 +306,10 @@ body {
 
 .footercoi div ul li a:hover {
     color: #daa300;
+}
+
+.coverfilm {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }

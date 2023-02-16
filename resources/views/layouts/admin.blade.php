@@ -17,6 +17,10 @@
                 <a href="/users"><li>USERS</li></a>
                 <a href="/admin/movies"><li>MOVIES</li></a>
                 <a href="{{route('adminReview')}}"><li>REVIEWS</li></a>
+                <a href="{{route('logout')}}">
+                    @csrf
+                    <li>LOGOUT</li>
+                </a>
             </nav>
         </header>
         <div class="garis"></div>

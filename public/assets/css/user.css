@@ -5,10 +5,12 @@
 }
 
 table {
-    margin-left: 13%;
-    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
     text-align: center;
     margin-top: 3%;
+    margin-bottom: 25%;
 }
 
 thead tr th{
@@ -20,10 +22,11 @@ tbody tr td{
     color: #FFF;
     font-size: 14px;
     font-weight: 400;
-    padding: 10px 0px;
+    padding: 10px 40px;
 }
 
 .edit-btn {
+    margin-top: 10px;       
     width: 70px;
     height: 25px;
     border-radius: 100px;
@@ -42,6 +45,7 @@ tbody tr td{
 }
 
 .delete-btn {
+    margin-top: 10px;
     padding: 4px 20px;
     border-radius: 100px;
     border: solid 1px #FFF;
@@ -58,8 +62,10 @@ tbody tr td{
  
 .add-btn {
     background-color: #00000000;
+    position: absolute;
     border-radius: 100px;
-    margin-top: 20px;
+    margin-top: -90px;
+    margin-left: 550px;
     width: 100px;
     height: 30px;
     border: solid 1px #FFF;

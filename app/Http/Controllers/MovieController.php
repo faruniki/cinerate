@@ -18,6 +18,12 @@ class MovieController extends Controller
         return view('admin.movies', compact('movie'));
     }
 
+    public function movie()
+    {
+        $movie = Movie::get();
+        return view('user.movies', compact('movie'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

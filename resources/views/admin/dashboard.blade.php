@@ -10,11 +10,11 @@
     <div class="containernya">
         <div class="kiri">
             <p class="juduldash">Users</p>
-            <p class="totaldash">3</p>
+            <p class="totaldash">7</p>
         </div>
         <div class="tengah">
             <p class="juduldash">Movies</p>
-            <p class="totaldash">13</p>
+            <p class="totaldash">5</p>
         </div>
         <div class="kanan">
             <p class="juduldash">Reviews</p>
